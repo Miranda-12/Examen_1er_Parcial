@@ -3,26 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscripciones TESE</title>
+    <title>Inscripciones TESE - Mantenimiento</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Encabezado institucional */
+        header {
+            background-color: #1b5e20; /* Verde oscuro institucional */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        /* Contenedor principal centrado */
+        main {
+            flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #f4f4f9;
-            margin: 0;
-            text-align: center;
+            padding: 20px;
         }
-        h1 {
-            color: #004b87; /* Azul institucional, ajustable según prefieras */
+
+        /* Tarjeta de aviso */
+        .aviso-card {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            border-top: 5px solid #1b5e20;
+        }
+
+        .aviso-card h1 {
+            color: #333;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .aviso-card p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Simulación de un loader/spinner */
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #1b5e20;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #343a40;
+            color: #adb5bd;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Sistema de Inscripciones TESE - Próximamente en la Nube</h1>
-    </div>
+
+    <header>
+        <h2>TECNOLÓGICO DE ESTUDIOS SUPERIORES DE ECATEPEC</h2>
+    </header>
+
+    <main>
+        <div class="aviso-card">
+            <div class="loader"></div>
+            <h1>Sistema de Inscripciones TESE - Próximamente en la Nube</h1>
+            <p>Estimado alumno, estamos mejorando nuestra infraestructura tecnológica para ofrecerte un proceso de reinscripción más rápido, seguro y sin interrupciones. Agradecemos tu paciencia.</p>
+            <p><strong>Departamento de Control Escolar</strong></p>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 TESE. Todos los derechos reservados.
+    </footer>
+
 </body>
 </html>
